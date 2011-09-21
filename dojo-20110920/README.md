@@ -16,3 +16,6 @@ For this first Dojo, we decided to solve [Checking Credit Cards](http://www.ruby
 * [Rodrigo Flores](http://github.com/rodrigoflores)
 * [Vinicius Baggio](http://github.com/vinibaggio)
 
+## Result ##
+
+Problem not solved due to lack of time
