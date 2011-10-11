@@ -4,6 +4,10 @@
 
 For this first Dojo, we decided to solve [Checking Credit Cards](http://www.rubyquiz.com/quiz122.html) problem.
 
+## Languages and tools ##
+
+We used Javascript as the language and [Jasmine](https://github.com/pivotal/jasmine) to test our code
+
 ## Participants ##
 
 * [Bruna Kochi](http://github.com/brutiko)
