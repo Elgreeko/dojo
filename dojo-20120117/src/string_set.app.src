@@ -1,4 +1,4 @@
-{application, solution,
+{application, string_set,
  [
   {description, ""},
   {vsn, "1"},
@@ -7,6 +7,6 @@
                   kernel,
                   stdlib
                  ]},
-  {mod, { solution, []}},
+  {mod, { string_set, []}},
   {env, []}
  ]}.

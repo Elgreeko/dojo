@@ -1,0 +1,8 @@
+{application,string_set,
+             [{description,[]},
+              {vsn,"1"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{string_set,[]}},
+              {env,[]},
+              {modules,[string_set]}]}.
