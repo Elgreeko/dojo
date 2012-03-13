@@ -9,7 +9,7 @@ ebin: lib/*.ex lib/*/*.ex lib/*/*/*.ex
 	@ echo Compiling ...
 	@ mkdir -p $(EBIN_DIR)
 	@ touch $(EBIN_DIR)
-	elixirc -pa deps/cowboy/ebin lib/*/*/*.ex lib/*/*.ex lib/*.ex -o $(EBIN_DIR)
+	elixirc lib/*/*/*.ex lib/*/*.ex lib/*.ex -o $(EBIN_DIR)
 	@ echo
 
 test: compile
