@@ -28,7 +28,7 @@ defmodule SolutionTest do
   end
 
   test "returns the matching anagrams" do
-    list = ["ball", "llab"]
-    assert_equal ["ball", "llab"], Anagram.anagram_of("blal", list)
+    list = ["blal", "ball"]
+    assert_equal ["blal", "ball"], Anagram.anagram_of("blal", list)
   end
 end
