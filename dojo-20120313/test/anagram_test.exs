@@ -1,6 +1,6 @@
 Code.require_file "../test_helper", __FILE__
 
-defmodule SolutionTest do
+defmodule AnagramTest do
   use ExUnit::Case
 
   test "returns itself as an anagram" do
