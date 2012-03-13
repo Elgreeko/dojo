@@ -1,20 +1,10 @@
 defmodule Anagram do
-  def anagram_of(word, [word | tail]) do
-    [word] ++ anagram_of(word, tail)
+  def anagram_of(word, list) do
+    Enum.filter(list, is_anagram(word, &1))
   end
 
-  def anagram_of(word, [head | tail]) do
-    if is_anagram(word, head) do
-      [head] ++ anagram_of(word, tail)
-    else:
-      anagram_of(word, tail)
-    end
-  end
-
-  def anagram_of(_word, []), do: []
-
-  defp is_anagram(first, last) do
-    sort(first) == sort(last)
+  defp is_anagram(word, candidate) do
+    sort(word) == sort(candidate)
   end
 
   defp sort(word) do
