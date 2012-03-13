@@ -1,5 +1,9 @@
 defmodule Anagram do
-  def anagram_of(word, list) do
-    [word]
+  def anagram_of(word, [head | _tail]) do
+    if word == head do
+      [word]
+    else:
+      []
+    end
   end
 end
