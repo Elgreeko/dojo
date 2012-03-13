@@ -15,10 +15,15 @@ defmodule SolutionTest do
 
   test "returns only the matching word" do
     list = ["ball", "cat", "house"]
-    assert_equal ["house"], Anagram.anagram_of("house",list)
+    assert_equal ["house"], Anagram.anagram_of("house", list)
   end
 
   test "returns an empty list if the list is empty" do
     assert_equal [], Anagram.anagram_of("house", [])
+  end
+
+  test "returns the matching anagram" do
+    list = ["ball"]
+    assert_equal ["ball"], Anagram.anagram_of("blal", list)
   end
 end
