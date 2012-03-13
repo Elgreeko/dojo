@@ -17,4 +17,8 @@ defmodule SolutionTest do
     list = ["ball", "cat", "house"]
     assert_equal ["house"], Anagram.anagram_of("house",list)
   end
+
+  test "returns an empty list if the list is empty" do
+    assert_equal [], Anagram.anagram_of("house", [])
+  end
 end
