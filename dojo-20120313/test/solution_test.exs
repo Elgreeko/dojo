@@ -13,8 +13,8 @@ defmodule SolutionTest do
     assert_equal [], Anagram.anagram_of("socialmedia", list)
   end
 
-  test "returns only the match anagram" do
-    list = ["ball","house"]
+  test "returns only the matching word" do
+    list = ["ball", "cat", "house"]
     assert_equal ["house"], Anagram.anagram_of("house",list)
   end
 end
