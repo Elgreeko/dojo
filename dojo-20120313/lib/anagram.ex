@@ -3,7 +3,7 @@ defmodule Anagram do
 
   def anagram_of(word, [head | tail]) do
     if is_anagram(word, head) do
-      [head]
+      [head] ++ anagram_of(word, tail)
     else:
       anagram_of(word, tail)
     end
