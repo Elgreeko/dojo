@@ -12,16 +12,16 @@ To run the tests (we suppose that you already have [Elixir][Elixir] installed)
 
 ## Participants
 
-* @britto
-* @carlosantoniodasilva
-* @carlosgaldino
-* @erichkist
-* @fabioyamate
-* @georgeguimaraes (cameraman)
-* @hugobarauna
-* @lucasmazza
-* @rafaelfranca
-* @rodrigoflores
+* [Carlos Antônio da Silva](https://github.com/carlosantoniodasilva)
+* [Carlos Galdino](https://github.com/carlosgaldino)
+* [Erich Kist](https://github.com/erichkist)
+* [Fábio Yamate](https://github.com/fabioyamate)
+* [George Guimarães (aka cameraman)](https://github.com/georgeguimaraes)
+* [Hugo Baraúna](https://github.com/hugobarauna)
+* [João Britto](https://github.com/britto)
+* [Lucas Mazza](https://github.com/lucasmazza)
+* [Rafael França](https://github.com/rafaelfranca)
+* [Rodrigo Flores](https://github.com/rodrigoflores)
 
 ## Retrospective
 
