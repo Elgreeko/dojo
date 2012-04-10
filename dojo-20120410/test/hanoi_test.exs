@@ -16,14 +16,18 @@ defmodule HanoiTest do
   end
 
   test "step works with a new tower" do
-    assert_equal {[2,3],[1],[]}, Hanoi.step Hanoi.generate(3), 1
+    assert_equal {[2,3],[],[1]}, Hanoi.step Hanoi.generate(3), 1
   end
 
   test "does two steps with a new tower" do
-    assert_equal {[3],[1],[2]}, Hanoi.step Hanoi.generate(3), 2
+    assert_equal {[3],[2],[1]}, Hanoi.step Hanoi.generate(3), 2
   end
 
   test "does three steps with a new tower" do
-    assert_equal {[3],[],[1,2]}, Hanoi.step Hanoi.generate(3), 3
+    assert_equal {[3],[1,2],[]}, Hanoi.step Hanoi.generate(3), 3
+  end
+
+  test "does four steps with a new tower" do
+    assert_equal {[],[1,2],[3]}, Hanoi.step Hanoi.generate(3), 4
   end
 end

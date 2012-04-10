@@ -21,15 +21,17 @@ defmodule Hanoi do
 
   # Gives a single tower step.
 
-  defp step({ [ha|_] = a, [hb|tb], [hc|_] = c }) when ha > hb and ha > hc do
-    { a, tb, [hb|c] }
-  end
-  defp step({ [ha|a], [hb|_] = b, c }) when ha > hb do
-    { a, b, [ha|c] }
+  defp step({ [ha|_] = a, [hb|_] = b, [hc|tc] }) when
+      ha > hb and ha > hc do
+    { a, [hc|b], tc }
   end
 
+  defp step({ [ha|ta], b, [hc|_] = c }) when
+      ha > hc do
+    { ta, [ha|b], c }
+  end
 
-  defp step({ [h|a], b, c }) do
-    { a, [h|b], c }
+  defp step({ [ha|ta], b, c }) do
+    { ta, b, [ha|c] }
   end
 end
