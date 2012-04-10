@@ -31,7 +31,16 @@ defmodule Hanoi do
     { ta, [ha|b], c }
   end
 
+  defp step({ [ha|_] = a, [hb|tb], [hc|_] = c}) when
+      ha < hb and hb < hc do
+    { a, tb, [hb|c] }
+  end
+
   defp step({ [ha|ta], b, c }) do
     { ta, b, [ha|c] }
+  end
+
+  defp step({[], [hb|tb], c}) do
+    {[hb], tb, c}
   end
 end

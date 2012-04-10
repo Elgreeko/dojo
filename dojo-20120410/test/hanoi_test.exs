@@ -30,4 +30,12 @@ defmodule HanoiTest do
   test "does four steps with a new tower" do
     assert_equal {[],[1,2],[3]}, Hanoi.step Hanoi.generate(3), 4
   end
+
+  test "does five steps with a new tower" do
+    assert_equal {[1],[2],[3]}, Hanoi.step Hanoi.generate(3), 5
+  end
+
+  test "does six steps with a new tower" do
+    assert_equal {[1],[],[2, 3]}, Hanoi.step Hanoi.generate(3), 6
+  end
 end
