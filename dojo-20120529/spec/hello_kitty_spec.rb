@@ -10,4 +10,14 @@ describe "HelloKitty" do
     kitty = HelloKitty.new 'ww', 1
     kitty.write.should == "ww\nww"
   end
+
+  it "prints the word thrice for a word with repeated letters with length three" do
+    kitty = HelloKitty.new 'www', 1
+    kitty.write.should == "www\nwww\nwww"
+  end
+
+  it "prints the word twice for a word with different letters" do
+    kitty = HelloKitty.new 'ab', 1
+    kitty.write.should == "ab\nba"
+  end
 end

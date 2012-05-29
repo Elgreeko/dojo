@@ -6,8 +6,14 @@ class HelloKitty
 
   def write
     output = ""
+    i = 0
+    output += @word + "\n"
     @word.length.times do
-      output += @word + "\n"
+      unless i == 0
+        new_word = @word[i..-1] + @word[0...i]
+        output += new_word + "\n"
+      end
+      i += 1
     end
     output.chomp
   end
