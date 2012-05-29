@@ -1,7 +1,7 @@
 class HelloKitty
   def initialize(word, count)
     @length = word.length
-    @word = word*count
+    @word = word * count
   end
 
   def shift(i)
@@ -9,10 +9,8 @@ class HelloKitty
   end
 
   def write
-    output = ""
-    @length.times do |i|
-      output += shift(i) + "\n"
-    end
-    output.chomp
+    @length.times.map do |i|
+      shift(i)
+    end.join("\n")
   end
 end
