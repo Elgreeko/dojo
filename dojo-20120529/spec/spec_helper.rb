@@ -1,3 +1,3 @@
-require 'rspec'
+require "rspec"
 
-require "my_file"
+require "hello_kitty"
