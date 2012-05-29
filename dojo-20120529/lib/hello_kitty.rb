@@ -6,11 +6,9 @@ class HelloKitty
 
   def write
     output = ""
-    count = 0
-    begin
-      count += 1
+    @word.length.times do
       output += @word + "\n"
-    end while(count < @word.length)
-    output[0..output.length - 2]
+    end
+    output.chomp
   end
 end
