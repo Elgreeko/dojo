@@ -15,9 +15,16 @@ defmodule Rpn do
     do_calc(tokens, [j-h|stack])
   end
 
+  defp do_calc(['*'|tokens], [h|[j|stack]]) do
+    do_calc(tokens, [j*h|stack])
+  end
+
+  defp do_calc(['/'|tokens], [h|[j|stack]]) do
+     do_calc(tokens, [j/h|stack])
+  end
+
   defp do_calc([h|tokens], stack) do
-    stack = [list_to_integer(h)|stack]
-    do_calc(tokens, stack)
+    do_calc(tokens, [list_to_integer(h)|stack])
   end
 
   defp do_calc([], [item]) do
