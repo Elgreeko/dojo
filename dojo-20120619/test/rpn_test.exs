@@ -30,4 +30,8 @@ defmodule RpnTest do
   test "solve with two non-consecutive operations" do
     assert Rpn.calc("8 3 - 15 +") == 20
   end
+
+  test "solve a complex expression" do
+    assert Rpn.calc("10 5 + 2 * 3 - 42 7 / + 3 3 ^ +") == 60
+  end
 end

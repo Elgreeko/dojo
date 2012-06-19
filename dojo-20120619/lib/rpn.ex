@@ -20,7 +20,11 @@ defmodule Rpn do
   end
 
   defp do_calc(['/'|tokens], [h|[j|stack]]) do
-     do_calc(tokens, [j/h|stack])
+    do_calc(tokens, [j/h|stack])
+  end
+
+  defp do_calc(['^'|tokens], [h|[j|stack]]) do
+    do_calc(tokens, [:math.pow(h, j)|stack])
   end
 
   defp do_calc([h|tokens], stack) do
