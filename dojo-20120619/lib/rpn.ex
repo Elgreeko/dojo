@@ -4,7 +4,7 @@ defmodule Rpn do
   end
 
   def calc(list) do
-    do_calc tokenizer(list), []
+    do_calc tokenize(list), []
   end
 
   defp do_calc(['+'|tokens], [h|[j|stack]]) do
@@ -20,11 +20,7 @@ defmodule Rpn do
     item
   end
 
-  defp tokenizer(list) do
+  defp tokenize(list) do
     Regex.split(%r/\s+/, list)
-  end
-
-  defp first([ h | _t]) do
-    h
   end
 end
