@@ -7,7 +7,11 @@ defmodule RpnTest do
     assert Rpn.calc("1") == 1
   end
 
-  test "solve with one operation" do
+  test "solve with one addition" do
     assert Rpn.calc("1 2 +") == 3
+  end
+
+  test "solve with one subtraction" do
+    assert Rpn.calc("1 2 -") == -1
   end
 end
